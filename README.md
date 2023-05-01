@@ -128,7 +128,7 @@ Figure 4. Python pivot table by @oleghbond. The result is imported into and disp
 
 ## Conclusions
 
-A pivot table with intermediate and final results both by rows and by columns is already in Python. The complete code of the method with a test example can be found on *github*.
+A pivot table with intermediate and final results both by rows and by columns is already in Python. The complete code of the method with a test example can be found on *github* – .
 
 The presented method is not interactive, but it is not required. Instead, the result is obtained programmatically in the form of a standard multi-index data frame.
 
