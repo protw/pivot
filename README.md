@@ -80,8 +80,8 @@ Then to obtain total summaries vertically and horizontally only at the top level
 ```python
 df_long = df.copy()
 
-df_long['All_cols'] = 0 # For the summary by columns at uppermost level
-df_long['All_rows'] = 0 # For the summary by rows at uppermost level
+df_long['All_cols'] = np.nan # For the summary by columns at uppermost level
+df_long['All_rows'] = np.nan # For the summary by rows at uppermost level
 ```
 
 First, we create a vertical summary, that is, for all rows, including the total summary of the top level of the input table `df_long`, thanks to the inclusion of the column `All_cols`and the corresponding index:
@@ -135,3 +135,5 @@ The presented method is not interactive, but it is not required. Instead, the re
 And the last. The methods on which the presented method is built, namely: `python_table`and `pivot_w_subtot`do not lose their value when summarization without subtotals or with subtotals only by rows is required.
 
 ## Ukrainian version
+
+https://medium.com/p/79c66abb6bca

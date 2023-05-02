@@ -80,8 +80,8 @@ pt1 = pivot_w_subtot(df=df,
 ```python
 df_long = df.copy()
 
-df_long['All_cols'] = 0 # For the summary by columns at uppermost level
-df_long['All_rows'] = 0 # For the summary by rows at uppermost level
+df_long['All_cols'] = np.nan # For the summary by columns at uppermost level
+df_long['All_rows'] = np.nan # For the summary by rows at uppermost level
 ```
 
  Спочатку ми створюємо вертикальний підсумок, тобто для всіх рядків, включаючи загальний підсумок верхнього рівня вхідної таблиці `df_long`, завдяки включенню стовпця `All_cols` і відповідного індексу:
@@ -135,3 +135,5 @@ df_wide = pivot_w_subtot(df=df_long,
 І, останнє. Методи, на яких побудований представлений метод, а саме: `python_table` і `pivot_w_subtot` не втрачають свого значення, коли потрібне зведення без проміжних підсумків або з проміжними підсумками лише за рядками.
 
 ## Англомовна версія
+
+https://medium.com/p/b7265fe1a360

@@ -69,8 +69,8 @@ def pivot_w_subtot2(df, values, indices, columns, aggfunc=np.nansum,
     ''' Creating two new temporary (dummy) columns to obtain total summaries 
         vertically (by rows) and horizontally (by columns) only at the top level. '''
 
-    df_long['All_cols'] = 0 # For the summary by columns at uppermost level
-    df_long['All_rows'] = 0 # For the summary by rows at uppermost level
+    df_long['All_cols'] = np.nan # For the summary by columns at uppermost level
+    df_long['All_rows'] = np.nan # For the summary by rows at uppermost level
     
     ''' First, we create a vertical summary, that is, for all rows, including the 
         total summary of the top level of the input table `df_long` (due to the 
